@@ -1,0 +1,6 @@
+// bem
+$namespace: 'pop';
+
+@mixin b($block) {
+  $b: $namespace + '-';
+}

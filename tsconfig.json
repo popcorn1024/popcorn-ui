@@ -1,23 +1,29 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "useDefineForClassFields": true,
-    "module": "esnext",
-    "moduleResolution": "node",
+    "allowJs": true,
     "strict": true,
+    "module": "ES6",
+    "target": "ES2018",
+    "noImplicitAny": false,
+    "declaration": true,
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
     "jsx": "preserve",
     "sourceMap": true,
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
     "lib": [
-      "esnext",
-      "dom"
-    ]
+      "ES2018",
+      "DOM"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true
   },
   "include": [
-    "src/**/*.ts",
-    "src/**/*.d.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue"
+    "packages"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/__test?__",
+    "**/dist"
   ]
 }

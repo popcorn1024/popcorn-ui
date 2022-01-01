@@ -9,7 +9,7 @@ if (!commitRE.test(msg)) {
 	if (!mergeRe.test(msg)) {
 		console.log('git commit信息校验不通过')
 
-		console.error(`git commit的信息格式不对，请按正确格式：title(scope): desc提交`)
+		console.error(`git commit的信息格式不对，请按正确格式：type(scope): desc提交`)
 	}
 	process.exit(1)
 } else {
